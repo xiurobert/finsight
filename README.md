@@ -15,3 +15,8 @@ Pipenv is used for dependency and environment management.
 If you have a CUDA-enabled (NVIDIA) GPU, you are free to use `pipenv install`.
 Otherwise, please run the following command:
 `pip install torch` to install the CPU-only version of PyTorch.
+
+
+## Testing against the actual market
+The alpaca markets API is being used here. I am most certainly not sponsored by them.
+Please use the paper trading API so you don't lose money.

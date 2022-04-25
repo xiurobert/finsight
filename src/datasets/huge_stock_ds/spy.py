@@ -1,3 +1,4 @@
+import torch
 import torch.utils.data as data
 import os
 import pandas as pd
@@ -13,6 +14,8 @@ class SPYDataset(data.Dataset):
         :param label: The label column to be used
         """
         self.data_dir = data_dir
+        self.features = features
+        self.label = label
         self._file_path = os.path.join(self.data_dir, "ETFs", "spy.us.txt")
         self.data = pd.read_csv(self._file_path)
         self.data['Date'] = pd.to_datetime(self.data['Date'])
@@ -22,5 +25,6 @@ class SPYDataset(data.Dataset):
 
     def __getitem__(self, idx):
         # TODO: Fix this soon
-        feature_list = self.data.iloc[idx, :-1].values.tolist()
-        return self.data.iloc[idx]
+        features = self.data.iloc[idx][self.features].values
+        label = self.data.iloc[idx][[self.label]].values
+        return torch.Tensor(list(features)), label[0]
