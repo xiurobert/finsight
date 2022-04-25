@@ -18,6 +18,7 @@ matplotlib = "*"
 ipympl = "*"
 
 [dev-packages]
+alpaca-trade-api = "*"
 
 [requires]
 python_version = "3.9"
