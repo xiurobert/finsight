@@ -15,6 +15,7 @@ torchaudio = {index = "pytorch"}
 jupyter = "*"
 pandas = "*"
 matplotlib = "*"
+ipympl = "*"
 
 [dev-packages]
 
