@@ -14,3 +14,10 @@ the `data/kaggle-huige-stock-market-dataset/` directory.
 
 Please extract all `*.csv` files and place it in the
 `data/kaggle-us-funds-dataset-from-yahoo-finance` direcotry
+
+
+### NASDAQ Historical data
+
+Download and place within the `data/ndaq-historical` directory.
+
+[SPY historical](https://www.nasdaq.com/market-activity/funds-and-etfs/spy/historical)

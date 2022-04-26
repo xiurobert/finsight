@@ -23,7 +23,8 @@ conda activate finsight
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 conda install -c conda-forge tqdm python-dotenv
 conda install pandas ipympl matplotlib jupyter
-
+# For testing
+pip install alpaca-trade-api
 ```
 
 
