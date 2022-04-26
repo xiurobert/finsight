@@ -9,3 +9,8 @@ This folder has been gitignored.
 
 Please extract `ETFs/` and `Stocks/` folders from the zip file, and place them within
 the `data/kaggle-huige-stock-market-dataset/` directory.
+
+### [US Funds dataset from Yahoo Finance](https://www.kaggle.com/datasets/stefanoleone992/mutual-funds-and-etfs)
+
+Please extract all `*.csv` files and place it in the
+`data/kaggle-us-funds-dataset-from-yahoo-finance` direcotry
